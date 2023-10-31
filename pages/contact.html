@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headlights Forever | Contact</title>
+    <link rel="stylesheet" href="../css/flexbox.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shared.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="icon" type="image/png" href="../photos/fav-icon.png" />
+  </head>
+
+<body>
+  <header class="main-header">
+      <div class="logo">
+      <a href="../index.html">
+        <img class="item-0" src="../photos/headlights-logo.png" alt="headlights forever">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <a class="item-1" href="../index.html">Home</a>
+      <a class="item-2" href="gallery.html">Gallery</a>
+      <a class="item-3" href="locations.html">Locations</a>
+      <a class="item-4" href="calculator.html">Calculator</a>
+      <a class="item-5" href="contact.html">Contact Us</a>
+    </nav>
+    <a class="button-top" href="contact.html">Get A Quote</a>
+  </header>
+
+  <div class="banner">
+    <div class="main-text">
+    <img class="divider" src="../photos/divider-img.png">
+    <h1>Contact Us</h1>
+    </div>
+  </div>
+
+
+
+
+<div class="form-contact">
+
+<form>
+  <h2>Get A Quote</h2>
+  <fieldset class="contact-info">
+    <legend class="legend"><span class="number"> 1</span> Contact Details</legend>
+      <label for="name">Full Name<span class="hint"> *</span></label>
+      <input type="text" id="name" name="user_name" required><br>
+
+      <label for="mail">Email<span class="hint"> *</span></label>
+      <input type="email" id="mail" name="user_email" required><br>
+
+      <label for="phone">Phone </label>
+      <input type="tel" id="phone" name="user_phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"><p class="no-phone">No phone? Include alternate contact in notes</p>
+
+      <label for="postcode">Postcode<span class="hint"> *</span></label>
+      <input type="text" id="postcode" name="user_postcode" maxlength="8" required><br>
+
+      <label for="address">Address<span class="hint"> *</span></label>
+      <input type="text" id="address" name="user_address" required>
+  </fieldset>
+
+  <fieldset class="car-info">
+    <legend class="legend"><span class="number"> 2</span> Car Information</legend>
+      <label for="car-type">Type Of Car<span class="hint"> *</span></label>
+        <input type="text" id="car-type" name="user_car-type" placeholder="Brand, Model" required>
+        <br>
+        <br>
+
+      <label>Car Batery Position<span class="hint"> *</span></label>
+        <input type="radio" id="batery_front" value="batery_front" name="user_batery-position" required><label for="batery_front" class="light">Front</label>
+        <input type="radio" id="batery_back" value="batery_back" name="user_batery-position" required><label for="batery_back" class="light">Back</label>
+        <br>
+        <br>
+
+
+      <label>How Damaged Are Your Headlights<span class="hint"> *</span></label>
+        <input type="radio" id="slightly" value="slightly" name="user_headlights-damage"><label for="slightly" class="light">Slightly</label>
+        <input type="radio" id="completely" value="completely" name="user_headlights-damage"><label for="completely" class="light">Completely</label>
+  </fieldset>
+
+  <fieldset class="additional-info">
+    <legend class="legend"><span class="number"> 3</span> Additional</legend>
+      <label for="note">Notes</label>
+        <textarea id="note" name="user_note"></textarea>
+        <br>
+        <br>
+
+      <label><a href="../pages/locations.html">Note: we only cover certain areas</a><span class="hint"> *</span><label>
+        <input type="checkbox" id="development" value="interest_development" name="user_interest" required><label class="light" for="development"> I understand</label><br>
+
+        <p class="required"><span class="hint"> *</span> required field</p>
+  </fieldset>
+
+  <br>
+    <button class="button-request" type="button">Request A Quote</button>
+    <button class="button-reset" type="reset">Reset</button>
+
+</form>
+
+</div>
+
+
+<!-- <form action="index.html" method="post" class="contact-form">
+
+<fieldset class="contact-info">
+  <legend><span class="number">1</span> Contact Details</legend>
+  <p class="hint">* - required field</p>
+  <label for="name">Full Name *</label>
+  <input type="text" id="name" name="user_name" required><br>
+  <label for="mail">Email *</label>
+  <input type="email" id="mail" name="user_email" required><br>
+  <label for="phone">Phone </label>
+  <input type="tel" id="phone" name="user_phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"> <p class="no-phone">No phone? Include alternate contact in notes</p><br>
+  <label for="postcode">Postcode *</label>
+  <input type="text" id="postcode" name="user_postcode" maxlength="8" required><br>
+  <label for="address">Address *</label>
+  <input type="text" id="address" name="user_address" required><br>
+  </fieldset>
+
+  <fieldset class="car-info">
+    <legend><span class="number">2</span> Car Information</legend>
+    <label for="car-type">Type Of Car *</label>
+    <input type="text" id="car-type" name="user_car-type" placeholder="Brand, Model" required>
+    <br>
+    <br>
+    <label>Car Batery Position *</label>
+      <input type="radio" id="batery_front" value="batery_front" name="user_batery-position" required><label for="batery_front" class="light">Front</label>
+      <input type="radio" id="batery_back" value="batery_back" name="user_batery-position" required><label for="batery_back" class="light">Back</label>
+      <br>
+      <br>
+      <label>How Damaged Are Your Headlights *</label>
+        <input type="radio" id="slightly" value="slightly" name="user_headlights-damage"><label for="slightly" class="light">Slightly</label>
+        <input type="radio" id="completely" value="completely" name="user_headlights-damage"><label for="completely" class="light">Completely</label>
+  </fieldset>
+
+<fieldset class="additional-info">
+  <legend><span class="number">3</span> Additional</legend>
+  <label for="note">Notes</label>
+  <textarea id="note" name="user_note"></textarea>
+  <br>
+  <br>
+  <label><a href="../pages/locations.html">Note: we only cover certain areas</a> *<label>
+  <input type="checkbox" id="development" value="interest_development" name="user_interest" required><label class="light" for="development"> I understand</label><br>
+<br>
+</fieldset>
+  </form> -->
+
+  
+  <footer>&copy Headlights forever. All Rights Reserved.</footer>
+  
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/flexbox.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shared.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/calculator.css" />
+    <link rel="icon" type="image/png" href="../photos/fav-icon.png" />
+    <title>Headlights Forever | Calculator</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            class="item-0"
+            src="../photos/headlights-logo.png"
+            alt="headlights forever"
+          />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a class="item-1" href="../index.html">Home</a>
+        <a class="item-2" href="gallery.html">Gallery</a>
+        <a class="item-3" href="locations.html">Locations</a>
+        <a class="item-4" href="calculator.html">Calculator</a>
+        <a class="item-5" href="contact.html">Contact Us</a>
+      </nav>
+      <a class="button-top" href="contact.html">Get A Quote</a>
+    </header>
+
+    <div class="banner">
+      <div class="main-text">
+        <img class="divider" src="../photos/divider-img.png" />
+        <h1>Calculator</h1>
+      </div>
+    </div>
+
+    <main>
+      <div class="calculator">
+        <h1>Headlights Restoration Price Calculator</h1>
+        <label for="model">Select Model:</label>
+        <select id="model">
+          <option value="">-- Select a Model --</option>
+          <option value="0">Ford</option>
+          <option value="5">Volkswagen</option>
+          <option value="0">Vauxhall</option>
+          <option value="5">BMW</option>
+          <option value="5">Mercedes-Benz</option>
+          <option value="5">Audi</option>
+          <option value="0">Toyota</option>
+          <option value="0">Nissan</option>
+          <option value="0">Honda</option>
+          <option value="0">Hyundai</option>
+          <option value="0">Kia</option>
+          <option value="0">Peugeot</option>
+          <option value="0">Citroën</option>
+          <option value="0">Fiat</option>
+          <option value="0">Renault</option>
+          <option value="5">Mini</option>
+          <option value="5">Land Rover</option>
+          <option value="5">Jaguar</option>
+          <option value="5">Volvo</option>
+          <option value="5">Lexus</option>
+          <option value="5">Mitsubishi</option>
+          <option value="0">Subaru</option>
+          <option value="5">Skoda</option>
+          <option value="5">SEAT</option>
+          <option value="5">Mazda</option>
+          <option value="5">Tesla</option>
+          <option value="5">Porsche</option>
+          <option value="0">Alfa Romeo</option>
+          <option value="0">Dacia</option>
+        </select>
+
+        <br />
+
+        <label for="location">Select Location:</label>
+        <select id="location">
+          <option value="">-- Select a Location --</option>
+          <option value="0">Battersea</option>
+          <option value="0">Fulham</option>
+          <option value="0">Chelsea</option>
+          <option value="5">Hammersmith</option>
+          <option value="5">Westminster</option>
+          <option value="0">Clapham</option>
+          <option value="5">Lambeth</option>
+          <option value="5">Tooting</option>
+        </select>
+
+        <br />
+
+        <label for="damaged-headlights">Select Damaged Headlights:</label>
+        <select id="damaged-headlights">
+          <option value="">-- Select a Option --</option>
+          <option value="75">Partly</option>
+          <option value="65">All Over</option>
+        </select>
+
+        <br />
+
+        <button onclick="calculatePrice()">Calculate Price</button>
+
+        <br />
+
+        <p>Total Price: £<span id="total-price">0</span></p>
+      </div>
+    </main>
+    <footer>&copy Headlights forever. All Rights Reserved.</footer>
+
+    <script>
+      function calculatePrice() {
+        const modelValue = parseInt(document.getElementById("model").value);
+        const locationValue = parseInt(
+          document.getElementById("location").value
+        );
+        const damagedHeadlightsValue = parseInt(
+          document.getElementById("damaged-headlights").value
+        );
+
+        if (
+          isNaN(modelValue) ||
+          isNaN(locationValue) ||
+          isNaN(damagedHeadlightsValue)
+        ) {
+          alert("Please select options for all fields."); // You can display an error message
+          return; // Don't calculate the price if any selection is invalid
+        }
+
+        const totalPrice = modelValue + locationValue + damagedHeadlightsValue;
+
+        document.getElementById("total-price").textContent = totalPrice;
+      }
+    </script>
+  </body>
+</html>

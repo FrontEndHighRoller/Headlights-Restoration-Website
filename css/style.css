@@ -1,0 +1,416 @@
+* {
+box-sizing: border-box;
+}
+
+/*<!-- ICONS WITH TEXT START  -->*/
+
+#key-features{
+    background-color: white;
+    padding: 16px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.key-feature-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 25px;
+}
+
+.key-feature-image{
+    background-color: #ffcede;
+    width: 120px;
+    height: 110px;
+}
+
+.key-feature-description{
+    color: black;
+    text-align: center;
+    /* test-style: none; */
+}
+
+/*<!-- ICONS WITH TEXT END  -->*/
+
+.maintaining{
+  padding-bottom: 50px;
+}
+
+.box-header h1{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.welcome h1, .welcome p, .bottom, footer{
+  text-align: center;
+}
+
+.banner{
+text-align: center;
+font-size: 1.25rem;
+background-color: black;
+color: white;
+}
+
+
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header finish */
+
+/* why to choose headlights forever start */
+.welcome{
+  padding: 1.25rem 0;
+}
+
+.welcome h2{
+  padding-left: 2.5rem;
+  padding-right: 1.5rem;
+}
+
+.welcome strong {
+    display: block;
+    font-weight: bold;
+    background-image: url('../photos/tick.png'); /* Replace with the correct path to your icon image */
+    background-repeat: no-repeat;
+    background-size: 16px 16px; /* Adjust the size as needed */
+    padding-left: 1.25rem; /* Add space to the left of the text for the icon */
+}
+
+
+.welcome li {
+  margin-bottom: 10px; /* Add some space between list items */
+  list-style-type: none;
+}
+
+.welcome strong {
+  display: block; /* Make the bold text a block-level element */
+  font-weight: bold;
+}
+
+/* why to choose headlights forever finish */
+
+
+/* FAQ collapsible START */
+
+.faq h2{
+  padding: 15px 0 15px 45px;
+
+}
+
+.collapsibles{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 30px 30px 30px 40px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.active, .collapsibles:hover {
+  background-color: #db9423;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+}
+
+
+
+/* FAQ collapsible END*/
+
+
+/* FORM START */
+
+form h2{
+    margin: 0;
+    padding: 0;
+  }
+
+.number{
+  padding: 1px 5px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+
+fieldset{
+  margin: 5px;
+  border-color: yellow;
+}
+
+form .contact-info,
+form .car-info,
+form .additional-info{
+  display: block;
+}
+
+form input{
+  width: 100%;
+}
+
+/* form input[id="batery_front"]{
+}
+
+.form-contact{}
+background: radial-gradient(circle, rgba(212,173,32,1) 28%, rgba(0,0,0,1) 69%); */
+
+
+.button-request, .button-reset{
+  font-family: Poppins, sans-serif;
+  background-color: #db9423;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 10px 140px;
+  border: none'
+}
+
+.button-request:hover,
+.button-request:active{
+  background-color: #db8023;
+}
+
+.button-reset:hover,
+.button-reset:active{
+  background-color: #635b53;
+}
+
+.button-reset{
+background-color: grey;
+}
+
+.required{
+  color: red;
+}
+
+.error-input{
+      border: 3px solid #d00;
+}
+
+.error-text{
+      color: #d00;
+}
+
+  /* FORM END */
+
+  /* FOOTER START */
+.button-footer{
+      font-family: Poppins, sans-serif;
+      background-color: #db9423;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      margin: 0 auto;
+      border-color: #db9423;
+      width: 80%;
+      padding: 10px 140px;
+}
+
+.button-footer:hover{
+    background-color: #db8023;
+}
+
+footer{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: black;
+  color: white;
+}
+  /* FORM FINISH */
+
+
+/*    MEDIA QUERTIES - - - - - - -MEDIA QUERIES */
+
+/* Media 1355 */
+@media screen and (max-width: 1355px){
+.benefits {
+    min-width: calc(50% - 10px);
+}
+.areas{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+
+.areas li{
+list-style: none;
+margin: 10px auto;
+}
+
+.areas ul{
+padding-left: 0;
+order: 1;
+
+}.areas h2{
+margin: 20px auto;
+}
+
+.areas img{
+max-width: 60%;
+order: 2;
+   }
+
+}
+/* Media 1355 */
+
+/* Media 1150 */
+
+@media screen and (max-width: 1149px){
+
+
+.special{
+  display: flex;
+  flex-direction: column-reverse;
+  }
+
+.left{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+/* Media 1150 */
+
+
+/* Media 991 */
+@media screen and (max-width: 991px){
+
+}
+/* Media 991 */
+
+
+/* Media 950 */
+@media screen and (max-width: 950px){
+  .container{
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.main-header{
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 30px;
+  }
+}
+/* Media 950 */
+
+
+/* Media 900px */
+
+@media screen and (max-width: 900px){
+  .benefits {
+    min-width: 100%;
+}
+  .box-header h1{
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .main-nav{
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  .diy-1 h2{
+    text-align: center;
+  }
+}
+
+/* Media 900px end */
+
+
+
+@media (max-width: 650px) {
+  .key-feature {
+    display: block; /* Change to block layout */
+    width: 100%; /* Full width for each item */
+    margin-bottom: 20px; /* Add some spacing between items */
+    padding: 0 16px; /* Add horizontal padding for spacing */
+  }
+
+  .welcome ul {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+  }
+
+  .welcome li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .devider-2{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .key-feature-image {
+    width: 120px; /* Maintain the original image width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .key-feature-list li:nth-child(2) .key-feature-image {
+  margin-right: 25px;
+}
+
+  .key-feature-description {
+    text-align: center; /* Center the text horizontally */
+  }
+
+}
+
+
+/* Media 500px */
+
+@media screen and (max-width: 500px){
+  .main-header {
+    gap: 5px;
+  }
+
+  .bmw{
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+
+  }
+  .adventages-container{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .main-header a {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .button-top {
+    text-align: center;
+    margin: 0;
+  }
+}
+/* Media 500px */

@@ -1,0 +1,159 @@
+.box-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 0px 0px;
+}
+
+.special {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 60px 0;
+}
+
+.left {
+  margin-left: 100px;
+}
+
+.bmw {
+  border-radius: 40px;
+}
+
+.right {
+  flex-direction: column;
+  margin: auto 100px;
+  text-align: center;
+}
+
+.special {
+  padding-left: 0;
+}
+
+/* locatons*/
+.areas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.areas h2 {
+  margin: 0 0 300px 100px;
+}
+
+.areas li {
+  margin: 0 80px 0 0;
+}
+
+.areas img {
+  width: auto;
+}
+
+/* locations*/
+
+/* adventages Start....................................................... */
+.adventages-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0 30px 0;
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+  border: 0 solid black;
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  justify-content: space-between;
+}
+
+.benefits {
+  flex: 1;
+  min-width: calc(33.33% - 10px);
+  margin: 5px;
+  padding: 20px;
+  background-color: #db9423;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.8em;
+}
+
+.benefits h4 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.benefits p {
+  text-align: center;
+}
+
+/* adventages Finish....................................................... */
+
+/* flex DIY start*/
+
+.diy-1 {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 100px;
+  align-self: center;
+  border: 0 solid black;
+}
+
+.diy-1 h2 {
+  margin: auto;
+}
+
+.diy {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+}
+
+/* .diy-column {
+  margin: 0 auto 20px auto;
+  width: 320px;
+} */
+
+.diy-item img {
+  width: 100%;
+  height: 50%;
+}
+
+.diy-item {
+  flex: 1;
+  flex-basis: calc(10% - 10px);
+  margin: 5px;
+  padding: 20px;
+}
+
+/* flex DIY Finish*/
+
+@media (max-width: 1320px) {
+  .diy-item {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 950px) {
+  .diy-item {
+    flex-basis: calc(100% - 10px);
+    padding: 0 20px;
+    margin: 0;
+  }
+}

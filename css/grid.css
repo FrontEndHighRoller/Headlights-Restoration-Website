@@ -1,0 +1,291 @@
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.photo-before,
+.photo-after{
+    flex: 2;
+    text-align: center;
+}
+
+.icon {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.photo-before img,
+.photo-after img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* gallery first grid*/
+/* .grid-container{
+  width: 90%;
+  margin: 80px auto 0 80px;
+  display: grid;
+  background-color: black;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 80px 50px 230px 40px;
+  border-radius: .80em;
+}
+
+.grid-item{
+position: relative;
+background-color: black;
+color: white;
+border: 1px solid white;
+
+}
+
+.grid-item::after {
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+}
+
+.grid-item::before {
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  left: 15px;
+  font-weight: bold;
+} */
+
+/* .grid-item-1{
+border: 0 solid black;
+border-radius: .80em;
+}
+
+.grid-item-3{
+border: 0 solid black;
+border-radius: .80em;
+}
+
+.grid-item-10{
+border: 0 solid black;
+border-radius: .80em;
+}
+
+.grid-item-12{
+border: 0 solid black;
+border-radius: .80em;
+}
+
+.grid-item-1::before {
+  content: 'BMW';
+
+}
+
+.grid-item-4::after {
+  content: 'Before';
+}
+
+.grid-item-6::before {
+  content: 'After';
+}
+
+.grid-item-7::after {
+content: "";
+background-image: url('../photos/bmw-before.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 0px;
+width: 95%;
+height: 90%;
+border-radius: .80em;
+border: 5px dashed red;
+background-origin: border-box;
+background-clip: padding-box;
+} */
+
+/* .grid-item-8::after {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background-image: url('../photos/arrow-right-solid.svg');
+  width: auto;
+  height: auto;
+} */
+
+/* .grid-item-9::after {
+content: "";
+background-image: url('../photos/bmw-after.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: -25px;
+width: 95%;
+height: 90%;
+border-radius: .80em;
+} */
+
+/* gallery first grid*/
+
+/* gallery second grid*/
+
+
+.grid-container-1 {
+  width: 90%;
+  margin: 80px auto 0 80px;
+  height: 400px;
+  display: grid;
+  background-color: black;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 80px 50px 230px 40px;
+}
+
+.grid-items {
+position: relative;
+background-color: black;
+color: white;
+border: 1px solid white;
+}
+
+.grid-items::after {
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+}
+
+.grid-items::before {
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  left: 15px;
+  font-weight: bold;
+}
+
+.grid-items-1::before {
+  content: 'Land Rover';
+}
+
+.grid-items-4::after {
+  content: 'Before';
+}
+
+.grid-items-6::before {
+  content: 'After';
+}
+
+.grid-items-7::after {
+content: "";
+background-image: url('../photos/landrover-before.jpg');
+background-size: cover;
+width: 95%;
+height: 90%;
+}
+
+.grid-items-8::after {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background-image: url('../photos/arrow-right-solid.svg');
+  width: 14px;
+  height: 15px;
+}
+
+.grid-items-9::after {
+content: "";
+background-image: url('../photos/landrover-after.jpg');
+background-size: cover;
+width: 95%;
+height: 90%;
+}
+
+/* gallery second grid*/
+
+/* gallery third grid*/
+
+.grid-container-2 {
+  width: 90%;
+  margin: 80px auto 0 80px;
+  height: 400px;
+  display: grid;
+  background-color: black;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 80px 50px 230px 40px;
+}
+
+.grid-items2 {
+position: relative;
+background-color: black;
+color: white;
+border: 1px solid white;
+}
+
+.grid-items2::after {
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+}
+
+.grid-items2::before {
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  left: 15px;
+  font-weight: bold;
+}
+
+.grid-items2-1::before {
+  content: 'Porche';
+}
+
+.grid-items2-4::after {
+  content: 'Before';
+}
+
+.grid-items2-6::before {
+  content: 'After';
+}
+
+.grid-items2-7::after {
+content: "";
+background-image: url('../photos/porche-before.jpg');
+background-size: cover;
+width: 95%;
+height: 90%;
+}
+
+.grid-items2-8::after {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background-image: url('../photos/arrow-right-solid.svg');
+  width: 14px;
+  height: 15px;
+}
+
+.grid-items2-9::after {
+content: "";
+background-image: url('../photos/porche-after.jpg');
+background-size: cover;
+width: 95%;
+height: 90%;
+}
+
+
+/* gallery third grid */

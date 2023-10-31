@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../../Headlights forever/photos/fav-icon.png">
+  <title>Headlights Forever | Contact Us</title>
+</head>
+<body>
+
+<form action="index.html" method="post" class="form">
+<h2>Get A Quote <i class="fa-solid fa-triangle-exclamation"></i></h2>
+
+<fieldset>
+  <legend><span class="number">1</span> Contact Details</legend>
+  <p class="hint">* - required field</p>
+  <label for="name">Full Name *</label>
+  <input type="text" id="name" name="user_name" required><br>
+  <label for="mail" class="error-text">Email * <i class="fa-thin fa-triangle-exclamation"></i></label>
+  <input type="email" id="mail" name="user_email" class="error-input"><br>
+  <label for="phone">Phone </label>
+  <input type="tel" id="phone" name="user_phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"> <p class="no-phone">No phone? Include alternate contact in notes</p><br>
+  <label for="postcode" class="error-text">Postcode *</label>
+  <input type="text" id="postcode" name="user_postcode" class="error-input"><br>
+  <label for="address">Address *</label>
+  <input type="text" id="address" name="user_address" required><br>
+  </fieldset>
+
+  <fieldset class="car">
+    <legend><span class="number">2</span> Car Information</legend>
+    <label for="car-type">Type Of Car *</label>
+    <input type="text" id="car-type" name="user_car-type" placeholder="Brand, Model" required>
+    <br>
+    <br>
+    <label>Batery Position *</label>
+      <input type="radio" id="batery_front" value="batery_front" name="user_batery-position" required><label for="batery_front" class="light">Front</label>
+      <input type="radio" id="batery_back" value="batery_back" name="user_batery-position" required><label for="batery_back" class="light">Back</label>
+      <br>
+      <br>
+      <label>How Damaged Are Your Headlights *</label>
+        <input type="radio" id="slightly" value="slightly" name="user_headlights-damage"><label for="slightly" class="light">Slightly</label>
+        <input type="radio" id="completely" value="completely" name="user_headlights-damage"><label for="completely" class="light">Completely</label>
+  </fieldset>
+
+<fieldset>
+  <legend><span class="number">3</span> Additional</legend>
+  <label for="note">Notes</label>
+  <textarea id="note" name="user_note"></textarea>
+  <br>
+  <br>
+  <label>Note: <a href="../pages/locations.html"> we only cover certain areas</a> *<label>
+  <input type="checkbox" id="development" value="interest_development" name="user_interest" required><label class="light" for="development"> I understand</label><br>
+<br>
+</fieldset>
+
+
+
+
+
+<br>
+  <button type="button">Request A Quote</button>
+  <button type="reset">Reset</button>
+  </form>
+
+</body>
+</html>

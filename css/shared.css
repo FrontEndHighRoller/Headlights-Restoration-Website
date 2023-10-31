@@ -1,0 +1,67 @@
+/* this keeps footer on the bottom */
+main {
+  min-height: calc(100vh - 68.39px - 158.59px - 63.39px);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 5px;
+}
+
+.main-nav {
+  flex-grow: 1; /* This makes the navigation expand and take up the available space */
+  text-align: center; /* To center the text within the navigation */
+  width: calc(100vh - 452px);
+}
+
+.item-0 {
+  height: 49px;
+}
+
+.main-nav a {
+  font-family: Poppins, sans-serif;
+  font-size: 0.93rem;
+  display: inline-block;
+  padding: 0.93rem 5px;
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: #db9423;
+}
+
+.button-top {
+  display: flex;
+  font-family: Poppins, sans-serif;
+  padding: 10px 40px;
+  background-color: #db9423;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: right;
+}
+
+.button-top:hover,
+.button-top:active {
+  background-color: #db8023;
+}
+
+.box-header {
+  background-color: black;
+  color: white;
+  padding: 50px 40px;
+}
+
+.safety,
+.avoid,
+.maintaining {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+}
