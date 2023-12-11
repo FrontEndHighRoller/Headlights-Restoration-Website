@@ -1,0 +1,135 @@
+/* FORM START */
+
+/* FIELDSET START*/
+.number {
+  padding: 0.06rem 0.3rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+
+fieldset {
+  margin: 0.3rem;
+  border-color: yellow;
+}
+
+/* FIELDSET FININSH*/
+
+.contact-info,
+.car-info,
+.additional-info {
+  display: block;
+}
+
+label {
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.condition-buttons input {
+  padding: 3.4rem;
+}
+
+/* Radio Button START */
+
+/* This is put Front, Back with their buttons in one line*/
+.battery-radio-button {
+  display: inline-block;
+  padding-right: 2rem;
+  padding-left: 0.6rem;
+}
+
+/* This is put Slightly, Completely with their buttons in one line*/
+.condition-button {
+  display: inline-block;
+  padding-right: 1.25rem;
+  padding-left: 0.6rem;
+}
+
+/* This is put I understand with its check button in one line*/
+.understand {
+  display: inline-block;
+  padding-right: 1.25rem;
+  padding-left: 0.6rem;
+}
+
+/* Radio Buttons FINISH*/
+
+/* Submit and Reset button START*/
+
+.button-request,
+.button-reset {
+  font-family: "Poppins", sans-serif;
+  background-color: #db9423;
+  color: white;
+  border-radius: 3.1rem;
+  cursor: pointer;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  margin: 0.6rem;
+}
+
+.button-reset {
+  background-color: grey;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-request:hover,
+.button-request:active {
+  background-color: #db8023;
+}
+
+.button-reset:hover,
+.button-reset:active {
+  background-color: #635b53;
+}
+
+/* Submit and Reset button FINISH*/
+
+.required,
+.hint {
+  color: red;
+}
+
+/* #car-type,
+.car-battery {
+  margin-bottom: 0.6rem;
+} */
+
+/* ERRORS COLORS START*/
+.error-input {
+  border: 0.1rem solid #d00;
+}
+
+.error-text {
+  color: #d00;
+}
+
+/* ERRORS COLORS END*/
+
+/* MEDIA QUERIES START*/
+@media (min-width: 59.3rem) {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+    min-height: 31rem;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* MEDIA QUERIES FINISH*/
+
+/* FORM END */

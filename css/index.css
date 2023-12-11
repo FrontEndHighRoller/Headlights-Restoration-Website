@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+}
+
+/* header finish */
+
+/* Content Header START  */
+.box-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px 0;
+  background-color: black;
+  color: white;
+}
+
+.box-header h1 {
+  font-size: 1.5rem;
+}
+/* Content Header FINISH  */
+
+/* ICONS WITH TEXT START */
+
+#key-features {
+  background-color: white;
+  padding: 16px;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.key-feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  padding: 25px;
+}
+
+.key-feature-image {
+  width: 120px;
+  height: 110px;
+}
+
+.key-feature-description {
+  color: black;
+  text-align: center;
+}
+
+/* ICONS WITH TEXT END */
+
+/* WHY WE SO SPECIAL - START */
+.special {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 30px 0;
+}
+
+.left {
+  margin-left: 100px;
+}
+
+.bmw {
+  border-radius: 40px;
+}
+
+.right {
+  flex-direction: column;
+  margin: auto 100px;
+  text-align: center;
+}
+
+/* WHY WE SO SPECIAL - END */
+
+/* why to choose headlights forever start */
+.welcome {
+  padding: 1.25rem 0;
+}
+
+.welcome h2 {
+  padding-left: 2.5rem;
+  padding-right: 1.5rem;
+}
+
+.welcome h1,
+.welcome p {
+  text-align: center;
+}
+
+.welcome strong {
+  display: block;
+  font-weight: bold;
+  background-image: url("../photos/tick.png"); /* Replace with the correct path to your icon image */
+  background-repeat: no-repeat;
+  background-size: 16px 16px; /* Adjust the size as needed */
+  padding-left: 1.25rem; /* Add space to the left of the text for the icon */
+  display: block; /* Make the bold text a block-level element */
+  font-weight: bold;
+}
+
+.welcome li {
+  margin-bottom: 10px; /* Add some space between list items */
+  list-style-type: none;
+}
+
+/* why to choose headlights forever finish */
+
+/* 6 ADVENTAGES Start....................................................... */
+.adventages-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  justify-content: space-between;
+}
+
+.benefits {
+  flex: 1;
+  min-width: calc(
+    33.33% - 10px
+  ); /* this will allow to wrap to the next line symetrically*/
+  margin: 5px;
+  padding: 20px;
+  background-color: #db9423;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.8em;
+}
+
+.benefits h4 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.benefits p {
+  text-align: center;
+}
+
+/* 6 ADVENTAGES Finish....................................................... */
+
+/* DIY start*/
+
+.diy-1 {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 30px 0;
+}
+
+.diy {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  padding: 0 40px;
+}
+
+.diy-item img {
+  width: 100%;
+  height: 50%;
+}
+
+.diy-item {
+  flex: 1;
+  flex-basis: calc(10% - 10px);
+  margin: 5px;
+  padding: 20px;
+}
+
+.maintaining {
+  padding-bottom: 50px;
+}
+
+/* DIY Finish*/
+
+/* FAQ collapsible START */
+
+.faq h2 {
+  padding: 15px 0 15px 45px;
+}
+
+.collapsibles {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 30px 30px 30px 40px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.active,
+.collapsibles:hover {
+  background-color: #db9423;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+}
+
+/* FAQ collapsible END*/
+
+/*    MEDIA QUERTIES - - - - - - -MEDIA QUERIES .............................................................................................................*/
+
+/* Media 1355 */
+@media (max-width: 1355px) {
+  .benefits {
+    min-width: calc(50% - 10px);
+  }
+  .areas {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+  }
+
+  .areas li {
+    list-style: none;
+    margin: 10px auto;
+  }
+
+  .areas ul {
+    padding-left: 0;
+    order: 1;
+  }
+  .areas h2 {
+    margin: 20px auto;
+  }
+
+  .areas img {
+    max-width: 60%;
+    order: 2;
+  }
+}
+/* Media 1355 */
+
+/* Media 1320 */
+
+@media (max-width: 1320px) {
+  .diy-item {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 950px) {
+  .diy-item {
+    flex-basis: calc(100% - 10px);
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+/* Media 1320 */
+
+/* Media 1150 */
+
+@media (max-width: 1149px) {
+  .special {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Media 1150 */
+
+/* Media 900px */
+
+@media (max-width: 900px) {
+  .benefits {
+    min-width: 100%;
+  }
+  .box-header h1 {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .diy-1 h2 {
+    text-align: center;
+  }
+}
+
+/* Media 900px end */
+
+/* Media 650px */
+
+@media (max-width: 650px) {
+  .key-feature {
+    display: block; /* Change to block layout */
+    width: 100%; /* Full width for each item */
+    margin-bottom: 20px; /* Add some spacing between items */
+    padding: 0 16px; /* Add horizontal padding for spacing */
+  }
+
+  .welcome ul {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .welcome li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .devider-2 {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .key-feature-image {
+    width: 120px; /* Maintain the original image width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .key-feature-list li:nth-child(2) .key-feature-image {
+    margin-right: 25px;
+  }
+
+  .key-feature-description {
+    text-align: center; /* Center the text horizontally */
+  }
+}
+
+/* Media 650px */
+
+/* Media 500px */
+
+@media (max-width: 500px) {
+  .bmw {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .adventages-container {
+    text-align: center;
+  }
+  .button-top {
+    text-align: center;
+    margin: 0;
+  }
+}
+/* Media 500px */

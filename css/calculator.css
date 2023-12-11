@@ -7,14 +7,14 @@
 
 .calculator select,
 .calculator button {
-  margin: 5px; /* Add margin between the elements */
+  margin: 0.31rem; /* Add margin between the elements */
   text-align: center;
 }
 
 .calculator button {
-  width: 350px;
-  height: 50px;
-  border-radius: 50px;
+  width: 21.8rem;
+  height: 3.1rem;
+  border-radius: 3.1rem;
   color: white;
   background-color: #db9423;
   border: none; /* this will remove black default backgroudn color */

@@ -1,0 +1,17 @@
+/* locations*/
+.areas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.areas h2 {
+  margin: 0 0 18.75rem 6.25rem;
+}
+
+.areas li {
+  margin: 0 5rem 0 0;
+}
+
+/* locations*/
